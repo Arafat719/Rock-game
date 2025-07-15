@@ -4,12 +4,12 @@ const rock = document.querySelector(".rock");
 const paper = document.querySelector(".paper");
 const scissors = document.querySelector(".scissors");
 
-const win = document.querySelector(".win h1");
+const win = document.querySelector(".win");
 
-const  userCore = document.querySelector(".userCore h1");
-const  compCore = document.querySelector(".compCore h1");
+const  userCore = document.querySelector(".userCore");
+const  compCore = document.querySelector(".compCore");
 
-const mess = document.querySelector(".mess h2")
+const mess = document.querySelector(".mess p")
 
 let coreUser = 0;
 let coreComp = 0;
