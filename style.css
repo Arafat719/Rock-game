@@ -85,7 +85,17 @@
     gap: 180px;
 }
 
-.number {
+.userCore {
+    background-color: rgb(3, 58, 121);
+    border-radius: 40px;
+    color: white;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.compCore {
     background-color: rgb(3, 58, 121);
     border-radius: 40px;
     color: white;
@@ -102,16 +112,18 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    text-transform: capitalize;
 }
 
 .win {
     height: auto;
-    width: 200px;
+    width: auto;
     border: none;
     border-radius: 50px;
     background-color: rgb(0, 51, 145);
     text-align: center;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     display: inline-block;
     margin-top: 20px;
+    color: white;
 }

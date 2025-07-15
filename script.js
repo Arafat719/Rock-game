@@ -4,18 +4,26 @@ const rock = document.querySelector(".rock");
 const paper = document.querySelector(".paper");
 const scissors = document.querySelector(".scissors");
 
-const com = Math.floor(Math.random() * 10);
+const win = document.querySelector(".win h1");
+
+const  userCore = document.querySelector(".userCore h1");
+const  compCore = document.querySelector(".compCore h1");
+
+const mess = document.querySelector(".mess h2")
+
+let coreUser = 0;
+let coreComp = 0;
+
+let comp = "";
 
 function showComSelection() {
+const com = Math.floor(Math.random() * 10);
     if (com <= 3) {
-        comp = "rock"
-        console.log(comp);
+        comp = "rock";
     } else if(com >= 4 && com <= 6) {
         comp = "paper";
-        console.log(comp)
     }else if (com >= 7 && com <= 9) {
         comp = "scissors";
-        console.log(comp);
     }
 }
 
@@ -26,16 +34,53 @@ boxes.forEach((box, index) => {
         let idx = index;
         if (idx == 0) {
             user = "rock";
-            console.log("user selectec", user)
             showComSelection();
         } else if (idx == 1) {
             user = "paper";
-            console.log("user selected", user)
             showComSelection();
         } else {
             user = "scissors";
-            console.log("user selected", user)
             showComSelection();
+        }
+        if (user == "rock" && comp == "rock") {
+            win.innerText = "match was draw";
+            mess.innerText = "the computer has taked rock";
+        } else if (user == "rock" && comp == "paper") {
+            win.innerText = "computer win";
+            mess.innerText = "the computer has taked paper";
+            coreComp++;
+            compCore.innerText = `${coreComp}`;
+        } else if (user == "rock" && comp == "scissors") {
+            win.innerText = "congratulations you win";
+            mess.innerText = "the computer has taked scissors";
+            coreUser++;
+            userCore.innerText = `${coreUser}`;
+        } else if (user == "paper" && comp == "rock") {
+            win.innerText = "congratulations you win";
+            mess.innerText = "the computer has taked rock";
+            coreUser++;
+            userCore.innerText = `${coreUser}`;
+        } else if (user == "paper" && comp == "paper") {
+            win.innerText = "match was draw";
+            mess.innerText = "the computer has taked paper";
+        } else if (user == "paper" && comp == "scissors") {
+            win.innerText = "computer win";
+            mess.innerText = "the computer has taked scissors";
+            coreComp++;
+            compCore.innerText = `${coreComp}`;
+        } else if (user == "scissors" && comp == "rock") {
+            win.innerText = "conputer win";
+            mess.innerText = "the computer has taked rock";
+            coreComp++;
+            compCore.innerText = `${coreComp}`;
+        } else if (user == "scissors" && comp == "paper") {
+            win.innerText = "congratulation you win";
+            mess.innerText = "the computer has taked paper";
+            coreUser++;
+            userCore.innerText = `${coreUser}`;
+        } else if (user == "scissors" && comp == "scissors") {
+            win.innerText = "match was draw";
+            mess.innerText = "the computer has taked scissors";
         }
     })
 })
