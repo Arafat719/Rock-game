@@ -1,0 +1,117 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.nav {
+    height: 60px;
+    background-color: midnightblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+
+.rock {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url(https://sihoonathan.github.io/rock-paper-scissors/assets/img/rock2.png);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.paper {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: url(https://sihoonathan.github.io/rock-paper-scissors/assets/img/paper.png);
+    background-size: cover;
+    rotate: 270deg;
+    box-sizing: border-box;
+}
+
+.scissors {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    rotate: 270deg;
+    background-image: url(https://i.pinimg.com/474x/67/eb/fd/67ebfd32e898b4ec3ae4e59ae33832c8.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.image:hover {
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+
+
+.main {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top: 50px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    color: rgb(5, 54, 94);
+}
+
+.main-sec {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 180px;
+}
+
+.number {
+    background-color: rgb(3, 58, 121);
+    border-radius: 40px;
+    color: white;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mess {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.win {
+    height: auto;
+    width: 200px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(0, 51, 145);
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
