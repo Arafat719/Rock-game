@@ -47,6 +47,8 @@ boxes.forEach((box, index) => {
             mess.innerText = "the computer has taked rock";
         } else if (user == "rock" && comp == "paper") {
             win.innerText = "computer win";
+            win.style.background = "#ED3500";
+            win.style.color = "#000000";
             mess.innerText = "the computer has taked paper";
             coreComp++;
             compCore.innerText = `${coreComp}`;
@@ -54,9 +56,14 @@ boxes.forEach((box, index) => {
             win.innerText = "congratulations you win";
             mess.innerText = "the computer has taked scissors";
             coreUser++;
+            win.style.background = "#4DFFBE";
+            win.style.color = "#000000";
             userCore.innerText = `${coreUser}`;
         } else if (user == "paper" && comp == "rock") {
             win.innerText = "congratulations you win";
+            win.style.background = "#4DFFBE";
+            win.style.color = "#000000";
+
             mess.innerText = "the computer has taked rock";
             coreUser++;
             userCore.innerText = `${coreUser}`;
@@ -65,16 +72,23 @@ boxes.forEach((box, index) => {
             mess.innerText = "the computer has taked paper";
         } else if (user == "paper" && comp == "scissors") {
             win.innerText = "computer win";
+            win.style.background = "#ED3500";
+            win.style.color = "#000000";
             mess.innerText = "the computer has taked scissors";
             coreComp++;
             compCore.innerText = `${coreComp}`;
         } else if (user == "scissors" && comp == "rock") {
             win.innerText = "conputer win";
+            win.style.background = "#ed3500";
+            win.style.color = "#000000"
             mess.innerText = "the computer has taked rock";
             coreComp++;
             compCore.innerText = `${coreComp}`;
         } else if (user == "scissors" && comp == "paper") {
             win.innerText = "congratulation you win";
+            win.style.background = "#4DFFBE";
+            win.style.color = "#000000";
+
             mess.innerText = "the computer has taked paper";
             coreUser++;
             userCore.innerText = `${coreUser}`;
